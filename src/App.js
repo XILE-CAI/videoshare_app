@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Video from "./pages/Video";
+import SignIn from "./pages/SignIn";
 
 
 //including mune and main content
@@ -43,6 +44,7 @@ function App() {
                   <Route path="/">
                     {/* index pages will call home page */} 
                     <Route index element={<Home/>} />
+                    <Route path="signin" element={<SignIn/>} />
                     <Route path="video">
                       <Route path=":id" element={<Video/>} />
                     </Route>
